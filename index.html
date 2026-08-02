@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -28,29 +29,43 @@
 
         <div class="login-box">
 
-            <img src="AQUI PONER LINK URL"
-                class="logo">
+            <!-- Cambiar por el logo UTP -->
+            <img src="img/utp.jpg"
+                class="logo"
+                alt="Logo UTP">
 
             <h2>Portal UTP</h2>
 
             <p>Bienvenido</p>
 
-            <input type="text" placeholder="Usuario">
 
-            <input type="password" placeholder="Contraseña">
+            <input 
+                type="text" 
+                id="correo" 
+                placeholder="Usuario">
 
-            <button id="btnLogin">
+
+            <input 
+                type="password" 
+                id="clave" 
+                placeholder="Contraseña">
+
+
+            <button id="btnLogin" onclick="iniciarSesion()">
 
                 Iniciar Sesión
 
             </button>
 
+
         </div>
 
     </div>
+
 
     <script src="js/login.js"></script>
 
 </body>
 
 </html>
+```
