@@ -5,7 +5,7 @@ function iniciarSesion() {
 
     if (
         correo === "u26277929@utp.edu.pe" &&
-        clave === "123456"
+        clave === "Lindes2204"
     ) {
         window.location.href = "inicio.html";
     } else {
