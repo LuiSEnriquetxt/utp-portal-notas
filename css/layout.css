@@ -1,147 +1,330 @@
+/* ===========================
+   LAYOUT PORTAL UTP
+=========================== */
+
+
 .sidebar{
 
-position:fixed;
+    position:fixed;
 
-left:0;
+    left:0;
 
-top:0;
+    top:0;
 
-width:230px;
+    width:230px;
 
-height:100vh;
+    height:100vh;
 
-background:#8d0000;
+    background:#8d0000;
 
-padding-top:30px;
+    padding-top:30px;
+
+    z-index:1000;
 
 }
+
 
 .sidebar h2{
 
-text-align:center;
+    text-align:center;
 
-color:white;
+    color:white;
 
-margin-bottom:40px;
+    margin-bottom:40px;
 
 }
+
 
 .sidebar a{
 
-display:block;
+    display:block;
 
-padding:18px 25px;
+    padding:18px 25px;
 
-color:white;
+    color:white;
 
-transition:.3s;
+    transition:.3s;
 
 }
+
 
 .sidebar a:hover{
 
-background:#6f0000;
+    background:#6f0000;
 
-padding-left:35px;
+    padding-left:35px;
 
 }
+
 
 .activo{
 
-background:#6f0000;
+    background:#6f0000;
 
 }
+
+
+
+/* CONTENIDO PRINCIPAL */
 
 .contenido{
 
-margin-left:230px;
+    margin-left:230px;
 
-min-height:100vh;
+    min-height:100vh;
 
-background:#f2f2f2;
+    background:#f2f2f2;
 
 }
+
+
+
+/* HEADER */
 
 header{
 
-height:70px;
+    height:70px;
 
-background:white;
+    background:white;
 
-display:flex;
+    display:flex;
 
-justify-content:space-between;
+    justify-content:space-between;
 
-align-items:center;
+    align-items:center;
 
-padding:0 30px;
+    padding:0 30px;
 
-box-shadow:0 2px 8px rgba(0,0,0,.1);
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
 
 }
+
 
 .usuario{
 
-position:relative;
+    position:relative;
 
 }
+
 
 #perfilBtn{
 
-background:#8d0000;
+    background:#8d0000;
 
-color:white;
+    color:white;
 
-padding:10px 18px;
+    padding:10px 18px;
 
-border-radius:8px;
+    border-radius:8px;
 
 }
+
 
 #menuPerfil{
 
-display:none;
+    display:none;
 
-position:absolute;
+    position:absolute;
 
-right:0;
+    right:0;
 
-top:55px;
+    top:55px;
 
-background:white;
+    background:white;
 
-border-radius:10px;
+    border-radius:10px;
 
-box-shadow:0 8px 20px rgba(0,0,0,.2);
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
 
-width:220px;
+    width:220px;
 
-overflow:hidden;
+    overflow:hidden;
 
 }
+
 
 #menuPerfil a{
 
-display:block;
+    display:block;
 
-padding:15px;
+    padding:15px;
 
 }
+
 
 #menuPerfil a:hover{
 
-background:#f2f2f2;
+    background:#f2f2f2;
 
 }
 
+
+
+/* FOOTER */
+
 footer{
 
-text-align:center;
+    text-align:center;
 
-padding:20px;
+    padding:20px;
 
-font-size:13px;
+    font-size:13px;
 
-color:#777;
+    color:#777;
+
+}
+
+
+
+/* ===========================
+      TABLETS
+=========================== */
+
+@media(max-width:900px){
+
+
+    .sidebar{
+
+        width:200px;
+
+    }
+
+
+    .contenido{
+
+        margin-left:200px;
+
+    }
+
+
+}
+
+
+
+/* ===========================
+      CELULARES
+=========================== */
+
+@media(max-width:600px){
+
+
+    .sidebar{
+
+        width:230px;
+
+        left:-230px;
+
+        transition:.3s;
+
+    }
+
+
+    /*
+       Cuando se active el menú
+       aparecerá desde la izquierda
+    */
+
+    .sidebar.activo-menu{
+
+        left:0;
+
+    }
+
+
+
+    .contenido{
+
+        margin-left:0;
+
+        width:100%;
+
+    }
+
+
+
+    header{
+
+        height:auto;
+
+        min-height:70px;
+
+        padding:15px;
+
+        flex-wrap:wrap;
+
+        gap:10px;
+
+    }
+
+
+
+    header h1{
+
+        font-size:22px;
+
+    }
+
+
+
+    #perfilBtn{
+
+        padding:8px 12px;
+
+        font-size:13px;
+
+    }
+
+
+
+    #menuPerfil{
+
+        width:180px;
+
+    }
+
+
+
+    .sidebar a{
+
+        padding:15px 20px;
+
+    }
+
+
+
+    
+}
+/* BOTÓN MENU CELULAR */
+
+.menu-btn{
+
+    display:none;
+
+    background:#8d0000;
+
+    color:white;
+
+    font-size:22px;
+
+    width:45px;
+
+    height:40px;
+
+    border-radius:8px;
+
+}
+
+
+/* CELULAR */
+
+@media(max-width:600px){
+
+
+    .menu-btn{
+
+        display:block;
+
+    }
+
 
 }

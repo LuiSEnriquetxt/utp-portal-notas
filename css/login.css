@@ -137,3 +137,75 @@ transform:translateY(0);
 }
 
 }
+
+/* ==========================
+   RESPONSIVE LOGIN
+========================== */
+
+@media(max-width:600px){
+
+    body{
+        background-position:center;
+    }
+
+
+    .overlay{
+
+        padding:20px;
+
+    }
+
+
+    .login-box{
+
+        width:100%;
+
+        max-width:350px;
+
+        padding:30px 20px;
+
+    }
+
+
+    .logo{
+
+        width:75px;
+
+    }
+
+
+    .login-box h2{
+
+        font-size:24px;
+
+    }
+
+
+    .login-box p{
+
+        font-size:14px;
+
+    }
+
+
+    .login-box input{
+
+        padding:12px;
+
+        font-size:14px;
+
+    }
+
+
+    .login-box button{
+
+        padding:12px;
+
+        font-size:15px;
+
+    }
+
+}
+
+
+

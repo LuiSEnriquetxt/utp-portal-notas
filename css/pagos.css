@@ -1,99 +1,201 @@
+/* ===========================
+   PAGOS PORTAL UTP
+=========================== */
+
+
 main{
 
-padding:35px;
+    padding:35px;
 
 }
+
 
 .subtitulo{
 
-margin-top:8px;
+    margin-top:8px;
 
-color:#666;
+    color:#666;
 
 }
+
+
+/* CONTENEDOR DE PAGOS */
 
 #contenedorPagos{
 
-margin-top:30px;
+    margin-top:30px;
 
-display:grid;
+    display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
-gap:20px;
+    gap:20px;
 
 }
+
+
+
+/* TARJETAS */
 
 .tarjetaPago{
 
-background:white;
+    background:white;
 
-padding:20px;
+    padding:20px;
 
-border-radius:15px;
+    border-radius:15px;
 
-box-shadow:0 8px 18px rgba(0,0,0,.12);
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
 
-transition:.3s;
+    transition:.3s;
 
 }
+
 
 .tarjetaPago:hover{
 
-transform:translateY(-6px);
+    transform:translateY(-6px);
 
 }
+
+
 
 .tarjetaPago h3{
 
-margin-bottom:18px;
+    margin-bottom:18px;
 
-color:#980000;
+    color:#980000;
 
 }
+
+
 
 .tarjetaPago p{
 
-margin:8px 0;
+    margin:8px 0;
 
 }
+
+
+
+/* ESTADOS */
 
 .estado{
 
-display:inline-block;
+    display:inline-block;
 
-margin-top:18px;
+    margin-top:18px;
 
-padding:8px 18px;
+    padding:8px 18px;
 
-border-radius:30px;
+    border-radius:30px;
 
-font-size:13px;
+    font-size:13px;
 
-font-weight:bold;
+    font-weight:bold;
 
 }
+
 
 .pagado{
 
-background:#dff7e5;
+    background:#dff7e5;
 
-color:#0f8a35;
+    color:#0f8a35;
 
 }
+
 
 .proceso{
 
-background:#fff4c7;
+    background:#fff4c7;
 
-color:#9b7000;
+    color:#9b7000;
 
 }
 
+
 .pendiente{
 
-background:#dfefff;
+    background:#dfefff;
 
-color:#0067d8;
+    color:#0067d8;
+
+}
+
+
+
+/* ===========================
+      TABLETS
+=========================== */
+
+@media(max-width:900px){
+
+
+    main{
+
+        padding:25px;
+
+    }
+
+
+}
+
+
+
+/* ===========================
+      CELULARES
+=========================== */
+
+@media(max-width:600px){
+
+
+    main{
+
+        padding:15px;
+
+    }
+
+
+    .subtitulo{
+
+        font-size:14px;
+
+    }
+
+
+    #contenedorPagos{
+
+        grid-template-columns:1fr;
+
+        gap:15px;
+
+        margin-top:20px;
+
+    }
+
+
+    .tarjetaPago{
+
+        padding:18px;
+
+    }
+
+
+    .tarjetaPago h3{
+
+        font-size:18px;
+
+    }
+
+
+    .estado{
+
+        font-size:12px;
+
+        padding:7px 15px;
+
+    }
+
 
 }

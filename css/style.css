@@ -1,29 +1,196 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* ===========================
+   RESET GENERAL
+   Portal UTP
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
 
-    font-family:"Poppins",sans-serif;
+html {
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
 
-    background:#f5f5f5;
+
+body {
+
+    font-family: "Poppins", sans-serif;
+
+    background: #f5f5f5;
+
+    width: 100%;
+    min-height: 100vh;
+
+    overflow-x: hidden;
 
 }
 
-a{
 
-    text-decoration:none;
+/* Enlaces */
 
-    color:inherit;
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+/* Botones */
+
+button {
+
+    cursor: pointer;
+
+    border: none;
+
+    font-family: "Poppins", sans-serif;
 
 }
 
-button{
 
-    cursor:pointer;
+/* Imágenes adaptables */
 
-    border:none;
+img {
+
+    max-width: 100%;
+
+    height: auto;
 
 }
+
+
+/* Contenedores generales */
+
+.container,
+.content,
+.main-content {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 20px;
+
+}
+
+
+/* Evita que textos largos rompan la pantalla */
+
+p,
+h1,
+h2,
+h3,
+span {
+
+    overflow-wrap: break-word;
+
+}
+
+
+/* ===========================
+      TABLETS
+=========================== */
+
+@media (max-width: 900px) {
+
+
+    .container,
+    .content,
+    .main-content {
+
+        padding: 15px;
+
+    }
+
+
+}
+
+
+/* ===========================
+      CELULARES
+=========================== */
+
+@media (max-width: 600px) {
+
+
+    body {
+
+        font-size: 14px;
+
+    }
+
+
+    h1 {
+
+        font-size: 24px;
+
+    }
+
+
+    h2 {
+
+        font-size: 20px;
+
+    }
+
+
+    h3 {
+
+        font-size: 18px;
+
+    }
+
+
+    .container,
+    .content,
+    .main-content {
+
+        width: 100%;
+
+        padding: 10px;
+
+    }
+
+
+    button {
+
+        width: 100%;
+
+        padding: 12px;
+
+    }
+
+
+    input,
+    select,
+    textarea {
+
+        width: 100%;
+
+    }
+
+
+    /* Tarjetas */
+
+    .card,
+    .curso-card,
+    .info-card {
+
+        width: 100% !important;
+
+    }
+
+
+}
+
+
+
